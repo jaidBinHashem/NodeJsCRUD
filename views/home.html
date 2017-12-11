@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+</head>
+
+<body>
+
+    <div align="center">
+        <table id='details-table'>
+            <tr>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Location</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </table>
+        <br>
+        <form id="add_data">
+            Name:
+            <br>
+            <input type="text" id="name" name="name">
+            <br> Department:
+            <br>
+            <input type="text" id="department" name="department">
+            <br> Location:
+            <br>
+            <input type="text" id="location" name="location">
+            <br>
+            <br>
+            <input type="submit" value="Add">
+        </form>
+    </div>
+</body>
+
+<script src="./public/js/home.js"></script>
+
+</html>
